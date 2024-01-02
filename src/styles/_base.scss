@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../assets/fonts/Barlow-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../assets/fonts/Barlow-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../assets/fonts/Barlow-Black.ttf');
+    font-weight: 900;
+}
+
+:root {
+    --clr-primary: #7B8BAD;
+}
+
+body { 
+    font-family: 'Barlow';
+    font-weight: 500; 
+    color: var(--clr-primary);
+}
+
