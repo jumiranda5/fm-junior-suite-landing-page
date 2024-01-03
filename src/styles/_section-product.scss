@@ -1,0 +1,131 @@
+@use 'variables' as v;
+
+.product-section {
+    margin-top: 3.5rem;
+}
+
+.product-section.grid {
+    gap: 3.5rem;
+}
+
+.phone-picture img {
+    width: 100%;
+}
+
+.curved-line-1 {
+    width: 16ch;
+    margin-left: 17ch;
+    margin-bottom: .25rem;
+}
+
+.stats-container {
+    text-align: center;
+}
+
+.stats span {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 0;
+    line-height: 1.166;
+    color: v.$clr-primary-dark;
+}
+
+/* Tablet */
+
+@media (min-width: 48rem) {
+    .product {
+        max-width: 100%;
+    }
+
+    .product-section {
+        margin-top: 5rem;
+    }
+
+    .product-section.grid {
+        gap: 5.5rem;
+    }
+
+    .product,
+    .phone-picture {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .product.grid {
+        gap: 2.5rem;
+    }
+
+    .product { 
+        z-index: 2; 
+        align-self: center;
+    }
+
+    .curved-line-1 {
+        width: 25ch;
+        margin-left: 25ch;
+        margin-bottom: 1rem;
+    }
+
+    .product-title-container {
+        max-width: 56ch;
+    }
+
+    .product-text {
+        max-width: 50%;
+    }
+
+    .phone-picture {
+        margin-left: auto;
+        z-index: 1;
+        width: 41.5%;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 75rem) {
+    .product-section {
+        margin-top: 4.25rem;
+    }
+
+    .product-section.grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6rem;
+    }
+
+    .product,
+    .phone-picture {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .curved-line-1 {
+        width: 32ch;
+        margin-left: 32ch;
+        margin-bottom: 1rem;
+    }
+
+    .product-title-container {
+        max-width: 70ch;
+    }
+
+    .product-text {
+        max-width: 35ch;
+    }
+
+    .product .primary-link {
+        margin-top: .75rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: start;
+        align-self: center;
+    }
+
+}

@@ -12,7 +12,7 @@ span {
 .heading-xl {
     font-size: 2.375rem;
     line-height: 1.08;
-    letter-spacing: -0.0625rem;
+    letter-spacing: -0.0139em;
 }
 
 .heading-l {
@@ -35,7 +35,7 @@ span {
 
 .heading-s {
     line-height: 1.6;
-    letter-spacing: 0.15625rem;
+    letter-spacing: 0.15625em;
 }
 
 .body-text {
@@ -58,7 +58,7 @@ span {
     }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 75rem) {
     .heading-xl {
         font-size: 4.5rem;
     }

@@ -16,16 +16,18 @@ body {
 }
 
 .wrapper {
-    margin: 0 1rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 32rem;
 }
 
 @media (min-width: 48rem) {
     .wrapper {
-        margin: 0 2.5rem;
+        max-width: 44rem;
     }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 75rem) {
     .wrapper {
         width: 90%;
         max-width: 69.375rem;
@@ -38,7 +40,6 @@ body {
 .primary-link,
 .secondary-link {
     max-width: max-content;
-    font-size: .875rem;
     font-weight: 700;
     letter-spacing: 0.01em;
     line-height: 1.77;
@@ -46,7 +47,8 @@ body {
 }
 
 .primary-link {
-    padding: 0.75em 1.625em;
+    font-size: 1.125rem;
+    padding: 0.83em 1.72em;
     background: v.$clr-primary-dark;
     color: v.$clr-white;
 }
@@ -56,8 +58,9 @@ body {
 }
 
 .secondary-link {
+    font-size: .875rem;
     padding: 0.78em 1.625em 0.6875em;
-    border: 2px solid v.$clr-primary-dark;
+    border: 1px solid v.$clr-primary-dark;
     color: v.$clr-primary-dark;
 }
 
@@ -67,7 +70,6 @@ body {
 }
 
 @media (min-width: 48rem) {
-    .primary-link,
     .secondary-link {
         font-size: 1rem;
     }
