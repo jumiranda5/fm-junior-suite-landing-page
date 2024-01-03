@@ -22,22 +22,22 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif|webp)$/ui,
                 type: 'asset/resource',
                 generator: {
                     filename: 'images/[name]-[hash][ext]'
                 }
             },
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                test: /\.(woff|woff2|eot|ttf|otf)$/ui,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name]-[hash][ext]'
                 }
             },
             {
-                test: /\.(?:js|mjs|cjs)$/,
-                exclude: /node_modules/,
+                test: /\.(?:js|mjs|cjs)$/u,
+                exclude: /node_modules/u,
                 use: {
                     loader: 'babel-loader',
                     options: {

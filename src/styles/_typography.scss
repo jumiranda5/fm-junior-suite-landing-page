@@ -1,0 +1,77 @@
+@use 'variables' as v;
+
+h1, h2, h3 {
+    font-weight: 400;
+    color: v.$clr-primary-dark;
+}
+
+span {
+    font-weight: 700;
+}
+
+.heading-xl {
+    font-size: 2.375rem;
+    line-height: 1.08;
+    letter-spacing: -0.0625rem;
+}
+
+.heading-l {
+    font-size: 2.5rem;
+    line-height: 1.16;
+    letter-spacing: -0.03125rem;
+}
+
+.heading-m,
+.heading-s {
+    text-transform: uppercase;
+}
+
+.heading-m {
+    font-size: 1.125rem;
+    line-height: 1.77;
+    font-weight: 700;
+    letter-spacing: -0.0125rem;
+}
+
+.heading-s {
+    line-height: 1.6;
+    letter-spacing: 0.15625rem;
+}
+
+.body-text {
+    line-height: 1.77;
+}
+
+.quote {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.footer-text {
+    font-size: 0.9375rem;
+}
+
+
+@media (min-width: 48rem) {
+    .heading-xl {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .heading-xl {
+        font-size: 4.5rem;
+    }
+
+    .heading-l {
+        font-size: 3rem;
+    }
+
+    .body-text {
+        font-size: 1.125rem;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+}

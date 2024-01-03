@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Epilogue';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(../assets/fonts/Epilogue-VariableFont_wght.ttf) 
+         format('truetype');
+}
+
+// Fonts
+$font: Epilogue, sans-serif;
+
+// Colors
+$clr-primary: #49566D;
+$clr-primary-dark: #172339;
+$clr-secondary: #FAF8F6;
+$clr-secondary-dark: #F3EDE7;
+$clr-gradient-blue: #A060FF;
+$clr-gradient-purple: #CB30E3;
+$clr-gradient-orange: #FFA84E;
+$clr-white: #FFFFFF;
+
+// Gradient
+$gradient: linear-gradient(155deg, $clr-gradient-blue, $clr-gradient-purple, $clr-gradient-orange);
