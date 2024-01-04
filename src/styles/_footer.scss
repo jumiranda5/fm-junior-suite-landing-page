@@ -40,8 +40,16 @@ footer {
     }
 
     .footer-container.grid {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
+    }
+
+    .footer-social-links {
+        margin-left: auto;
+    }
+
+    .footer-logo {
+        margin-right: auto;
     }
 }
 

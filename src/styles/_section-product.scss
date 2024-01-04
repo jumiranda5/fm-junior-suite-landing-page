@@ -94,13 +94,21 @@
 
     .product-section.grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 6rem;
+        gap: 3rem;
     }
 
     .product,
     .phone-picture {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
+    }
+
+    .product {
+        margin-bottom: 2.5rem;
+    }
+
+    .phone-picture {
+        width: 42.5%;
     }
 
     .curved-line-1 {
@@ -124,6 +132,7 @@
     .stats-container {
         grid-template-columns: 1fr;
         gap: 4rem;
+        margin-left: 3rem;
         text-align: start;
         align-self: center;
     }
