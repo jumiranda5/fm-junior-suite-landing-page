@@ -1,0 +1,54 @@
+@use 'variables' as v;
+
+footer {
+    padding: 3.5rem 0;
+    background-color: v.$clr-secondary-dark;
+}
+
+.footer-container.grid {
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    aspect-ratio: 1 / 1;
+}
+
+.social-link > svg {
+    display: block;
+}
+
+.social-link:hover path {
+    fill: v.$clr-primary;
+}
+
+@media (min-width: 48rem) {
+    footer {
+        padding: 4.5rem 0;
+        background-color: v.$clr-secondary-dark;
+    }
+
+    .footer-container.grid {
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 75rem) {
+    footer {
+        padding: 6rem 0 4.5rem;
+        background-color: v.$clr-secondary-dark;
+    }
+}
+
