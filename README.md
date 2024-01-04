@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page - todo]()
-- Live Site URL: [Github Pages - todo]()
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/suite-landing-page-Gm1akqjngy)
+- Live Site URL: [Github Pages](https://jumiranda5.github.io/fm-junior-suite-landing-page/)
 
 ## Author
 
