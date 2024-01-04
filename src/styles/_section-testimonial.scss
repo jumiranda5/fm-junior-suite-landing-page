@@ -1,0 +1,159 @@
+@use 'variables' as v;
+
+// Container
+
+.testimonial-section {
+    margin-top: 3.5rem;
+    background: linear-gradient(v.$clr-secondary-dark, v.$clr-secondary-dark);
+    background-size: 100% 57%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.testimonial-container.wrapper {
+    width: 100%;
+}
+
+.testimonial-image,
+.testimonial {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+// Image
+
+.testimonial-image {
+    position: relative;
+    height: max-content;
+    overflow: hidden;
+}
+
+.author-picture {
+    position: relative; // z-index doesn't work with static position
+    width: 15.75rem;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.testimonial-image-blur {
+    --blur-width: 15rem;
+    position: absolute;
+    bottom: -2rem;
+    left: calc(50% - (var(--blur-width) / 2));
+    width: var(--blur-width);
+    aspect-ratio: 1/1;
+    z-index: 1;
+}
+
+// Text
+
+.testimonial {
+    margin-top: 10rem;
+    padding: 18rem 1rem 4rem;
+    border-radius: 0.9375rem;
+    background-color: v.$clr-primary-dark;
+    color: v.$clr-secondary-dark;
+    text-align: center;
+}
+
+.curved-line-2 {
+    margin: 0 auto;
+}
+
+.testimonial-title,
+.testimonial-author {
+    color: v.$clr-secondary;
+}
+
+.testimonial-title,
+.testimonial-text {
+    margin: 2.5rem 0;
+}
+
+
+/* Tablets */
+
+@media (min-width: 48rem) {
+
+    // Container
+
+    .testimonial-section {
+        margin-top: 5.75rem;
+        background-size: 100% 54%;
+    }
+
+    // Image
+
+    .testimonial-image-blur {
+        --blur-width: 25rem;
+        bottom: -5rem;
+    }
+
+    // Text
+
+    .testimonial {
+        margin-top: 12rem;
+        padding: 16rem 4.5rem 4rem;
+    }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 75rem) {
+    
+    // Container
+
+    .testimonial-section {
+        margin-top: 9.625rem;
+        background-size: 100% 50%;
+    }
+    
+    .testimonial-container.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-image {
+        grid-column: 1 / 2;
+        align-self: flex-end;
+    }
+
+    // Image
+
+    .author-picture {
+        width: 360px;
+        margin: 0 auto 0 7.5rem;
+    }
+
+    .testimonial-image-blur {
+        --blur-width: 32rem;
+        bottom: -5rem;
+        left: 2rem;
+    }
+
+    // Text
+
+    .testimonial {
+        grid-column: 1 / 3;
+        
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3.375rem;
+        align-items: center;
+
+        margin-top: 3rem;
+        padding: 0 7.5rem 0 46%;
+        text-align: start;
+    }
+    
+    .testimonial-title {
+        margin: 0;
+    }
+
+    .curved-line-2 {
+        margin-top: 10rem;
+        align-self: flex-start;
+    }
+
+}

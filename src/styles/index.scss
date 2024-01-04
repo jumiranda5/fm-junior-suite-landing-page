@@ -1,5 +1,6 @@
-@use 'reset.scss';
-@use 'base.scss';
-@use 'typography.scss';
-@use 'header.scss';
-@use 'section-product.scss';
+@use './reset';
+@use './base';
+@use './typography';
+@use './header';
+@use './section-product';
+@use './section-testimonial'
