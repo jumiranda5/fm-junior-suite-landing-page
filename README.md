@@ -1,6 +1,7 @@
-# Frontend Mentor - Typemaster pre-launch landing page solution
+# Frontend Mentor - Suite landing page solution
 
-This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Suite landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/suite-landing-page-tj_eaU-Ra). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
 
 ## Table of contents
 
@@ -17,7 +18,8 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 Users should be able to:
 
--
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
@@ -25,9 +27,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-EiJn7mU4Mz)
-- Live Site URL: [Github Pages](https://jumiranda5.github.io/fm-junior-typemaster/)
+- Solution URL: [Frontend Mentor Solution Page - todo]()
+- Live Site URL: [Github Pages - todo]()
 
 ## Author
 
 - Frontend Mentor - [@jumiranda5](https://www.frontendmentor.io/profile/jumiranda5)
+
+## Acknowledgments
+
+This [youtube video](https://www.youtube.com/watch?v=fp9eVtkQ4EA) from [web dev simplified](https://www.youtube.com/@WebDevSimplified) was helpful to understand img srcset.
